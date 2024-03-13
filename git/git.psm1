@@ -18,17 +18,17 @@ $global:gitRepoConfigFile = $Env:HOME + "\.gitrepos"
 
  .Example
    # Starts a recursive git pull on a base path.
-   Start-RecursiveGitPull "C://dev//automation-center"
+   Start-RecursiveGitPull "C://dev//awesome-project"
 
  .Example
    # Starts a recursive git pull on several base paths.
-   Start-RecursiveGitPull "C://dev//automation-center","C://dev//central-groots"
+   Start-RecursiveGitPull "C://dev//awesome-project","C://dev//another-awesome-project"
    
  .Example
    # Starts a recursive git pull on several base paths with the input on multiple lines.
    Start-RecursiveGitPull `
-		"C://dev//automation-center",  `
-		"C://dev//central-groots"
+		"C://dev//awesome-project",  `
+		"C://dev//another-awesome-project"
 
 #>
 function Start-RecursiveGitPull
